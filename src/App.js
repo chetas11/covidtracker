@@ -5,25 +5,30 @@ import Charts from "./Components/Chart";
 import CountryPicker from "./Components/CountryPicker";
 import { fetcher } from "./api";
 
-
 function App() {
-
   const [data, setData] = useState({});
 
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setData(await fetcher());
+    };
 
-  useEffect(async () => {
-    const NewData = await fetcher();
-    setData(NewData)
+    fetchAPI();
   }, []);
 
-  
+  const handleCountryChange = async (country) => {
+    const fetchData = await fetcher(country);
+    fetchData.country = country;
+    setData(fetchData);
+  };
 
+  console.log(data);
 
   return (
     <div className="container">
       <Cards data={data} />
-      <CountryPicker />
-      <Charts />
+      <CountryPicker handleCountryChange={handleCountryChange} />
+      <Charts data={data} />
     </div>
   );
 }

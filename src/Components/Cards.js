@@ -9,7 +9,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
   return (
     <div className="card-container">
       <Grid container spacing={3} justify="center">
-        <Grid xs={3} md={3} item component={Card} className="card infected">
+        <Grid xs={12} md={3} item component={Card} className="card infected">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Infected
@@ -30,7 +30,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={3} md={3} component={Card} className="card recovered">
+        <Grid item xs={12} md={3} component={Card} className="card recovered">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Recovered
@@ -51,7 +51,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid xs={3} md={3} item component={Card} className="card deaths">
+        <Grid xs={12} md={3} item component={Card} className="card deaths">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Deaths
