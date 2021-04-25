@@ -80,4 +80,8 @@ p {
   .form-control {
     width: 60% !important;
   }
+
+  h2 {
+    margin: 8px 0px !important; 
+  }
 }
