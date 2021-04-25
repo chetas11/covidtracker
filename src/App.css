@@ -1,41 +1,83 @@
-body{
-  background-color: #e6e6e6 ;
+body {
+  background-color: #e6e6e6;
+  font-family: "Poppins", sans-serif;
+  background-color: #e6e6e6;
+  background-color: #e6e6e6;
+  background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.container{
+h1 {
+  color: #903749;
+}
+
+h2 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+p {
+  margin: 0px;
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.fas {
+  color: #184d47;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.chart-container{
+.chart-container {
   display: flex;
   justify-content: center;
-  width:88%
+  width: 75%;
 }
 
-.card-container{
-  margin: 50px 0 !important; 
+.card-container {
+  margin: 10px 50px !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
-.form-control{
-  width: 30%;
+.form-control {
+  width: 30% !important;
   margin-bottom: 30px !important;
+  margin-top: 30px !important;
 }
 
-.card{
+.card {
   margin: 0 2% !important;
+  background-color: #fefefe !important;
+  color: #1e1e1e !important;
 }
 
-.infected{
-  border-bottom: 10px solid rgba(0,0,255,0.5);
+.infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
 }
 
-.recovered{
-  border-bottom: 10px solid rgba(0,255,0,0.5);
+.recovered {
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
 }
 
-.deaths{
-  border-bottom: 10px solid rgba(255,0,0,0.5);
+.deaths {
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 770px) {
+  .card {
+    margin: 2% 0% !important;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+
+  .form-control {
+    width: 60% !important;
+  }
 }

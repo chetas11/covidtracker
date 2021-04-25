@@ -26,6 +26,9 @@ function App() {
 
   return (
     <div className="container">
+      <h1>
+        COVID-19 <i class="fas fa-virus"></i> Tracker
+      </h1>
       <Cards data={data} />
       <CountryPicker handleCountryChange={handleCountryChange} />
       <Charts data={data} />
