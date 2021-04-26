@@ -16,7 +16,7 @@
 
  #### Screenshot - 
 
-![Screenshot](https://github.com/chetas11/ReceipeApp/blob/master/RecipeApp.jpg)
+![Screenshot](https://github.com/chetas11/covidtracker/blob/master/src/covid.PNG)
 
 
 # Getting Started with Create React App
