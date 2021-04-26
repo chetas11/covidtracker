@@ -1,3 +1,24 @@
+# Covid Tracker
+
+#### Working Link Deployed using Netlify - https://covid-tracker-chetas11.netlify.app/
+
+#### Languages used
+- HTML
+- JS
+- CSS
+- React
+
+#### References -
+
+- https://developer.mozilla.org/en-US/
+- https://reactwithhooks.netlify.app/
+- https://www.npmjs.com/package/parcel-bundler
+
+ #### Screenshot - 
+
+![Screenshot](https://github.com/chetas11/ReceipeApp/blob/master/RecipeApp.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
